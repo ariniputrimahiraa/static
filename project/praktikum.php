@@ -22,8 +22,13 @@ class Transaksi {
     }
 }
 
-$p1 = new Produk();
-$p1->tambahProduk();
+$p1 = new Produk("Moisturizer", 70000);
+$p2 = new Produk("Facial Wash", 50000);
+$p3 = new Produk("Eye Mask", 40000);
 
-echo "Total Produk: " . Produk::$jumlahProduk;
+$p1->tambahProduk();
+$p2->tambahProduk();
+$p3->tambahProduk();
+
+
 ?>
