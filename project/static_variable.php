@@ -19,6 +19,13 @@ $p3 = new Pengunjung();
 $p4 = new Pengunjung();
 $p5 = new Pengunjung();
 
-echo "Jumlah Pengunjung: " . Pengunjung::$jumlah;
+// sebelum reset
+echo "Sebelum reset: " . Pengunjung::$jumlah;
+echo "<br>";
 
+// panggil reset
+Pengunjung::reset();
+
+// sesudah reset
+echo "Sesudah reset: " . Pengunjung::$jumlah;
 ?>
