@@ -1,6 +1,6 @@
 <?php
 final class Database {
-    public function conenct() {
+    public function connect() {
         echo "Koneksi database";
     }
 }
