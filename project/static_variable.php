@@ -13,6 +13,8 @@ class Pengunjung {
 $p1 = new Pengunjung();
 $p2 = new Pengunjung();
 $p3 = new Pengunjung();
+$p4 = new Pengunjung();
+$p5 = new Pengunjung();
 
 echo "Jumlah Pengunjung: " . Pengunjung::$jumlah;
 
