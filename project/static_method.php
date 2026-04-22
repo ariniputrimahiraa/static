@@ -9,12 +9,16 @@ class Matematika {
     public static function bagi($a, $b) {
         return $a / $b;
     }
-    
+    public static function tambah($a, $b) {
+        return $a + $b;
+    }
 
 }
 
 echo Matematika::kali(4, 5);
 echo "<br>";
 echo Matematika::bagi(10, 2);
+echo "<br>";
+echo Matematika::tambah(3, 3);
 
 ?>
