@@ -17,8 +17,19 @@ class Produk {
 
 class Transaksi {
 
-    final public function prosesTransaksi() {
-        echo "Transaksi diproses";
+    final public function prosesTransaksi($daftarProduk) {
+        $total = 0;
+
+        echo "<h3>Daftar Produk:</h3>";
+
+        foreach ($daftarProduk as $p) {
+            echo $p->nama . " - Rp" . $p->harga . "<br>";
+            $total += $p->harga;
+        }
+
+        echo "<br>Total Produk: " . Produk::$jumlahProduk;
+        echo "<br>Total Harga: Rp" . $total;
+        echo "<br><b>Transaksi diproses</b>";
     }
 }
 
@@ -30,5 +41,11 @@ $p1->tambahProduk();
 $p2->tambahProduk();
 $p3->tambahProduk();
 
-echo "Total Produk: " . Produk::$jumlahProduk;
-?>
+// simpan dalam array
+$listProduk = [$p1, $p2, $p3];
+
+
+// transaksi
+$t = new Transaksi();
+$t->prosesTransaksi($listProduk);
+
