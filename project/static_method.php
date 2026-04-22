@@ -14,6 +14,9 @@ class Matematika {
     public static function kurang($a, $b) {
         return $a - $b;
     }
+    public static function luasPersegi($sisi) {
+        return $sisi * $sisi;
+    }
 
 }
 
@@ -24,5 +27,7 @@ echo "<br>";
 echo Matematika::tambah(3, 3);
 echo "<br>";
 echo Matematika::kurang(10, 2);
+echo "<br>";
+echo "Luas Persegi: " . Matematika::luasPersegi(5);
 
 ?>
