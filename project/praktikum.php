@@ -2,6 +2,13 @@
 class Produk {
 
     public static $jumlahProduk = 0;
+    public $nama;
+    public $harga;
+
+    public function __construct($nama, $harga) {
+        $this->nama = $nama;
+        $this->harga = $harga;
+    }
 
     public function tambahProduk() {
         self::$jumlahProduk++;
