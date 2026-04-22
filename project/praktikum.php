@@ -30,5 +30,5 @@ $p1->tambahProduk();
 $p2->tambahProduk();
 $p3->tambahProduk();
 
-
+echo "Total Produk: " . Produk::$jumlahProduk;
 ?>
